@@ -1,146 +1,26 @@
-# Meditation Data for January
-
-## Days 01-07
-(Existing content preserved)
-
-## Days 08-30
-### Day 08
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 09
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 10
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 11
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 12
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 13
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 14
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 15
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 16
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 17
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 18
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 19
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 20
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 21
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 22
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 23
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 24
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 25
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 26
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 27
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 28
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 29
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-### Day 30
-1. **Stage 1**: Content for Stage 1
-2. **Stage 2**: Content for Stage 2
-3. **Stage 3**: Content for Stage 3
-4. **Stage 4**: Content for Stage 4
-
-## Days 31
-(Existing content preserved)
+| 일차 | 주제 및 핵심 성구 | 1단계: 미크라 (경청) | 2단계: 리쉬마 (정결) | 3단계: 토타 (체화) | 4단계: 크리스토 (파송) |
+|------|------------------|---------------------|----------------------|---------------------|------------------------|
+| 08 | 인격적 야다 (요 17:3) | 영생은 단순한 지식이 아니라 주님을 인격적으로 체험하여 아는 것입니다. | 지식으로 분석하려는 헬라식 욕심과 도구로 파악하려는 교만을 비웁니다. | 주님은 정보가 아닌 실제임을 창자에 채우고 인격적 사귐의 은혜를 누립니다. | 오늘 일어나는 사건 속에서 주님의 마음을 직접 경험하며 함께 호흡하십시오. |
+| 09 | 사랑의 향유 (요 12:3) | 마리아처럼 가장 귀한 옥합을 깨뜨려 주님께 드리는 전적인 사랑의 가치입니다. | 계산적인 헌신과 나를 증명하려는 사심을 물두멍에 씻어냅니다. | 전부를 받기에 합당하신 주님을 향한 사랑의 기쁨을 창자에 가득 채웁니다. | 오늘 당신의 삶이 주님께 드려지는 향기로운 제물이 되게 하십시오. |
+| 10 | 그늘 아래 안식 (아 2:3) | 주님의 그늘 아래서 누리는 절대적인 안식과 평안입니다. | 스스로를 보호하려던 노력과 고집을 씻고 주님의 날개 아래로 피합니다. | 주님의 품 안에서 누리는 안전한 지성소의 안식을 창자에 채웁니다. | 어떤 환난 중에도 보호받는 왕의 자녀라는 당당함으로 하루를 사십시오. |
+| 11 | 꿀보다 단 말씀 (시 119:103) | 주의 말씀의 맛이 내 입에 꿀보다 더 단 영적 축복을 경험합니다. | 세속적인 맛에 길든 영적 감각의 마비와 지루함을 씻어냅니다. | 말씀이 나를 살리는 유일한 보약임을 창자에 새기고 영적 쾌락을 누립니다. | 당신이 전하는 말이 누군가에게 꿀처럼 달콤한 위로가 되게 하십시오. |
+| 12 | 동행의 신비 (창 5:24) | 에녹처럼 주님과 보조를 맞추어 평생을 함께 걷는 신비로운 여정입니다. | 주님보다 앞서 달려가려던 조급함과 내 계획의 고집을 비웁니다. | 한 걸음마다 주님과 발을 맞추는 안식을 창자에 채웁니다. 동행이 목적입니다. | 묵묵히 곁에서 걷고 계신 주님께 말을 거는 친밀한 하루를 보내십시오. |
+| 13 | 질투의 고통 (아 8:6) | 주님의 사랑은 죽음보다 강하며 불같이 뜨거운 열망으로 가득합니다. | 차갑게 식어버린 종교적 심장과 냉소적인 마음을 씻어냅니다. | 나를 향한 주님의 불타는 사랑을 창자에 채웁니다. 이 사랑은 생명입니다. | 오늘 주님의 뜨거운 심장을 가지고 사람들을 대하십시오. 온기가 세상을 녹입니다. |
+| 14 | 영원한 신랑 (호 2:19-20) | 주님은 우리에게 영원히 장가드시는 변치 않는 신랑이십니다. | 조건에 따라 흔들리는 사랑의 패턴과 불안을 물두멍에서 비웁니다. | 끊어지지 않는 언약의 끈을 창자에 새기십시오. 주님은 결코 포기하지 않으십니다. | 가장 존귀한 왕의 신부라는 품격과 당당함으로 하루를 사십시오. |
+| 15 | 약속의 증표 (창 9:13) | 무지개 언약은 주님의 신실하심을 보여주는 시각적 약속입니다. | 심판에 대한 두려움과 불신, 의심을 리쉬마의 물두멍에서 씻어냅니다. | 변치 않는 주님의 약속을 창자에 채웁니다. 말씀은 영원합니다. |
+| 16 | 용서의 식탁 (에 4:32) | 주님이 우리를 용서하심과 같이 서로 친절하며 용서하는 삶입니다. | 상대방을 정죄하여 나를 높이려는 사심과 내 안의 쓴 뿌리를 비웁니다. | 용서가 주는 자유를 창자에 채우며 주님의 인격을 내 인격으로 삼습니다. | 오늘은 평화의 사신입니다. 맺힌 관계를 풀고 화해의 통로가 되십시오. |
+| 17 | 화해의 손길 (마 5:23-24) | 주님은 예배보다 형제와의 화목을 먼저 요구하시는 관계의 하나님입니다. | 내가 왜 먼저?라는 자존심과 고집을 번제단에 태워 비웁니다. | 낮아짐으로 얻는 영적 승리를 창자에 새깁니다. 손 내미는 자가 강한 자입니다. |
+| 18 | 긍휼의 마음 (마 14:14) | 주님은 무리를 보시고 불쌍히 여기사 병자들을 고쳐 주셨습니다. | 타인의 아픔에 무관심했던 이기적인 마음과 벽을 씻어냅니다. | 사람을 불쌍히 여기는 주님의 창자를 내 안에 이식하십시오. | 당신 주변의 아픈 영혼을 주님의 시선으로 바라보는 손길이 되십시오. |
+| 19 | 상한 갈대 (마 12:20) | 주님은 상한 갈대를 꺾지 않으시는 인내와 긍휼의 왕이십니다. | 부족한 나를 자책하고 포기하려던 마음과 절망을 비웁니다. | 상처 입은 나를 싸매시는 주님의 부드러운 손길을 창자에 느낍니다. | 당신처럼 상처 입은 자들에게 주님의 부드러움을 나타내는 희망이 되십시오. |
+| 20 | 눈물의 골짜기 (시 84:6) | 고통의 눈물 골짜기를 지날 때 샘물이 솟게 하시는 은혜입니다. | 상황을 불평하며 원망하던 입술을 물두멍에 씻고 사심을 비웁니다. | 눈물이 변하여 기쁨의 샘이 되는 역설을 창자에 가득 채웁니다. | 슬픔 중에 있는 이들에게 당신의 위로를 담아 기쁨을 서빙하십시오. |
+| 21 | 치유의 광선 (말 4:2) | 공의로운 해가 떠올라 치료하는 광선을 비추어 우리를 뛰게 하십니다. | 어둠 속에 숨으려 했던 우울함과 질병의 자아를 빛 앞에 씻어냅니다. | 빛이 내 영혼과 육체의 구석구석을 치료함을 창자로 믿고 강건해집니다. | 오늘 당신의 밝은 표정이 누군가에게 치료의 광선이 되게 하십시오. |
+| 22 | 사랑의 수고 (살전 1:3) | 믿음의 역사와 사랑의 수고, 소망의 인내를 기억하시는 주님입니다. | 보상을 바라고 움직였던 계산적인 동기와 사심을 씻어냅니다. | 사랑하기 때문에 땀 흘리는 기쁨을 창자에 가득 채우십시오. | 아무도 알아주지 않는 곳에서 주님의 마음으로 묵묵히 수고하십시오. |
+| 23 | 하나 됨의 신비 (고전 12:13) | 한 성령으로 세례를 받아 그리스도 안에서 완전한 몸을 이룹니다. | 나 혼자 뛰려 하거나 시기하던 분열의 마음과 우월감을 비웁니다. | 지체들과 연결되어 있다는 안정감을 창자에 풍성히 채웁니다. | 팀원이나 가족을 주님의 한 몸으로 대할 때 권능이 임합니다. |
+| 24 | 서로 사랑하라 (요 13:34-35) | 내가 너희를 사랑한 것 같이가 우리 사랑의 기준입니다. | 내 기준에 맞는 사람만 골라 사랑하려던 편견과 선입견을 씻습니다. | 주님이 나를 이토록 사랑하셨다는 감격을 창자에 가득 채웁니다. | 만나는 가장 힘든 사람에게 주님 사랑의 한 조각을 서빙하십시오. |
+| 25 | 지체 의식 (고전 12:26) | 한 지체의 아픔이 나의 아픔이며 기쁨이 나의 기쁨입니다. | 타인의 고통을 관전하듯 대했던 냉담함과 무관심을 물두멍에 씻습니다. | 이웃의 눈물이 내 눈물처럼 느껴지는 공감을 창자에 채웁니다. | 고통받는 지체에게 주님의 위로를 담은 메시지를 전하십시오. |
+| 26 | 섬김의 도 (요 13:14-15) | 주와 선생이 되어 제자들의 발을 씻기신 왕의 섬김입니다. | 대접받고 높임받으려던 교만의 때와 체면을 리쉬마에서 비웁니다. | 낮게 허리를 숙여 남의 발을 닦아주는 겸손의 평안을 채웁니다. | 당신이 있는 곳에서 가장 궂은일을 먼저 맡아 왕의 식탁을 서빙하십시오. |
+| 27 | 겸손의 허리띠 (벧전 5:5) | 교만한 자를 대적하시고 겸손한 자에게 은혜를 주시는 하나님입니다. | 은근히 나를 드러내고 인정받으려 했던 사심을 낮추어 비웁니다. | 비울수록 부요해지는 하늘의 충만함을 창자에 가득 채우십시오. | 오늘 당신의 모든 공로를 주님께 돌려 주님의 영광을 드러내십시오. |
+| 28 | 평화의 사도 (로 12:18) | 할 수 있거든 모든 사람과 더불어 화목하라 하시는 포괄적 명령입니다. | 옳음을 증명하려 타인을 꺾으려던 공격성과 분노를 씻어냅니다. | 폭풍 속에서도 잠잠한 주님의 평안을 나의 능력으로 채웁니다. | 갈등이 있는 곳에서 평화의 다리가 되어 하나님의 아들이라 불리십시오. |
+| 29 | 사과나무 그늘 (아 2:3) | 주님의 그늘 아래 앉아 심히 기뻐하고 달콤한 열매를 먹습니다. | 분주한 일상 속 주님과의 시간을 방해하는 조급함과 염려를 비웁니다. | 주님이 주시는 생명의 달콤함을 창자에 가득 채웁니다. | 잠시 멈추어 주님의 임재 안에서 크게 호흡하며 하루를 향기롭게 하십시오. |
+| 30 | 축복의 통로 (창 12:2-3) | 땅의 모든 족속이 나를 통해 복을 얻게 하시는 축복의 전달자입니다. | 나만 복되려 하고 움켜쥐려 했던 탐욕의 때를 물두멍에서 씻습니다. | 내가 주님의 은혜가 흘러가는 거룩한 관이 되었음을 창자에 새깁니다. |
+| 31 | 회고와 준비 | 한 달 동안 주님께서 어떻게 인도하셨는지 기도로 돌아봅니다. | 부족했던 부분을 솔직히 고백하고 주님의 용서를 구합니다. | 받은 은혜와 변화에 대해 하나님 아버지께 깊은 감사를 드립니다. | 4월의 테마(성장과 고난)를 묵상하며 새로운 달을 준비합니다.
