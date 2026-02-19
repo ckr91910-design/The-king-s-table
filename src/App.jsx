@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// 1월 31일치 전체 데이터 (데이터 누락 방지 완결판)
+// 1월 31일치 전체 데이터
 const meditationData = [
   { id: 1, title: "갈릴리 조반", verse: "와서 조반을 먹으라 (요 21:12)", lishma: "실패한 밤의 그물을 씻으십시오. 결과 중심의 헬라식 사고를 물두멍에 던지고 나를 비웁니다.", tota: "주님이 구워주신 생선의 따뜻함이 창자에 채워집니다. 나는 사랑받는 자입니다.", christo: "사명을 받은 베드로처럼 오늘 나는 주님의 사랑으로 세상을 향해 나갑니다." },
   { id: 2, title: "비둘기 눈", verse: "내 사랑아 너는 어여쁘고 어여쁘다 네 눈이 비둘기 같구나 (아 1:15)", lishma: "복잡한 계산과 염려로 혼탁해진 눈을 씻어내십시오. 오직 주님만 바라보도록 내 욕심을 비웁니다.", tota: "주님이 보시는 나의 아름다움을 창자에 채우십시오. 나는 주님의 보석입니다.", christo: "오늘 만나는 사람들에게 주님의 따뜻한 시선을 전달하는 통로가 되십시오." },
@@ -28,76 +28,4 @@ const meditationData = [
   { id: 24, title: "서로 사랑하라", verse: "서로 사랑하라 내가 너희를 사랑한 것 같이 너희도 서로 사랑하라 (요 13:34)", lishma: "내 기준에 맞는 사람만 사랑하려던 편견을 씻으십시오. 주님의 사랑을 위해 선입견을 비웁니다.", tota: "주님이 나를 이토록 사랑하셨다는 감격을 창자에 채우십시오. 그것이 이웃 사랑의 힘입니다.", christo: "오늘 당신이 만나는 가장 힘든 사람에게 주님 사랑의 한 조각을 서빙하십시오." },
   { id: 25, title: "지체 의식", verse: "만일 한 지체가 고통을 받으면 모든 지체가 함께 고통을 받고 (고전 12:26)", lishma: "타인의 고통을 관전하듯 대했던 냉담함을 씻으십시오. 공감을 위해 무관심을 비웁니다.", tota: "이웃의 눈물이 내 눈물처럼 느껴지는 공감을 창자에 채우십시오. 그것이 주님의 마음입니다.", christo: "고통받는 지체에게 주님의 위로를 담은 메시지를 전하십시오. 당신은 주님의 위로자입니다." },
   { id: 26, title: "섬김의 도", verse: "너희도 서로 발을 씻어 주는 것이 옳으니라 (요 13:14)", lishma: "대접받고 높임받으려 하던 교만의 때를 씻으십시오. 낮은 곳으로 임하기 위해 체면을 비웁니다.", tota: "허리를 숙여 남의 발을 닦아주는 겸손의 평안을 창자에 채우십시오. 주님은 낮은 곳에 계십니다.", christo: "당신이 있는 곳에서 가장 궂은일을 먼저 맡으십시오. 당신이 왕의 식탁을 서빙하는 자입니다." },
-  { id: 27, title: "겸손의 허리띠", verse: "하나님은 교만한 자를 대적하시되 겸손한 자들에게는 은혜를 주시느니라 (벧전 5:5)", lishma: "인정받으려 했던 사심을 씻어내십시오. 은혜만을 갈망하며 나를 낮추어 비웁니다.", tota: "겸손한 자에게 부어주시는 하늘의 충만함을 창자에 채우십시오. 비울수록 부요해집니다.", christo: "모든 공로를 주님께 돌리십시오. 당신의 겸손함이 주님의 영광을 드러낼 것입니다." },
-  { id: 28, title: "평화의 사도", verse: "할 수 있거든 너희로서는 모든 사람과 더불어 화목하라 (로 12:18)", lishma: "타인을 꺾으려던 공격성과 분노를 씻으십시오. 평강의 왕을 모시기 위해 분노를 비웁니다.", tota: "폭풍 속에서도 잠잠한 주님의 평안을 창자에 채우십시오. 평화는 성도의 능력입니다.", christo: "갈등이 있는 곳에 들어가 평화의 다리가 되십시오. 당신은 하나님의 아들이라 불릴 것입니다." },
-  { id: 29, title: "사과나무 그늘", verse: "내가 그 그늘에 앉아서 심히 기뻐하였고 (아 2:3)", lishma: "분주함 속에서 주님과의 시간을 방해하는 조급함을 씻어냅니다.", tota: "주님이 주시는 생명의 달콤함을 창자에 채우십시오. 주님 안에서 쉬는 것이 최고의 투자입니다.", christo: "오늘 잠시 멈추어 주님의 임재 안에서 크게 호흡하십시오. 하루가 향기로워질 것입니다." },
-  { id: 30, title: "축복의 통로", verse: "땅의 모든 족속이 너로 말미암아 복을 얻을 것이니라 (창 12:3)", lishma: "나만 복되려 움켜쥐려 했던 탐욕을 씻으십시오. 축복의 전달자가 되기 위해 소유권을 비웁니다.", tota: "내가 주님의 은혜가 흘러가는 거룩한 관이 되었음을 창자에 새기십시오.", christo: "오늘 모든 이에게 축복의 말을 서빙하십시오. 당신을 통해 주님 나라가 확장됩니다." },
-  { id: 31, title: "회고와 감사", verse: "여호와는 그 얼굴을 네게로 향하여 드사 평강 주시기를 원하노라 (민 6:26)", lishma: "지난 한 달간 부족했던 부분을 고백하고 정결을 위해 나를 다시 비웁니다.", tota: "받은 은혜와 변화에 대해 하나님께 깊은 감사를 드립니다. 감사를 창자에 가득 채웁니다.", christo: "다음 달의 테마인 '사랑과 연결'을 기대하며 기도로 준비합니다." }
-];
-
-export default function App() {
-  const [currentDay, setCurrentDay] = useState(1);
-  const [memo, setMemo] = useState("");
-
-  useEffect(() => {
-    const savedMemo = localStorage.getItem(`memo-${currentDay}`);
-    setMemo(savedMemo || "");
-  }, [currentDay]);
-
-  const data = meditationData.find(d => d.id === currentDay) || meditationData[0];
-
-  const handleNextDay = () => {
-    localStorage.setItem(`memo-${currentDay}`, memo);
-    if (currentDay < 31) {
-      setCurrentDay(prev => prev + 1);
-      setMemo("");
-      window.scrollTo(0, 0);
-    } else {
-      alert("1월의 모든 만찬을 마쳤습니다! 수고하셨습니다.");
-    }
-  };
-
-  return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#f5f5f4', padding: '10px', fontFamily: 'serif' }}>
-      <div style={{ maxWidth: '450px', margin: '0 auto', backgroundColor: 'white', borderRadius: '15px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
-        <div style={{ backgroundColor: '#78350f', color: 'white', padding: '20px', textAlign: 'center' }}>
-          <h1 style={{ fontSize: '22px', margin: 0 }}>King's Table</h1>
-          <p style={{ fontSize: '12px', opacity: 0.8, margin: '5px 0 0 0' }}>휘장을 지나 왕의 식탁으로</p>
-        </div>
-
-        <div style={{ padding: '25px' }}>
-          <div style={{ textAlign: 'center', borderBottom: '2px solid #f5f5f4', marginBottom: '20px', paddingBottom: '15px' }}>
-            <h2 style={{ fontSize: '18px', color: '#78350f', margin: 0 }}>1월 {currentDay}일 거룩한 만찬</h2>
-            <p style={{ fontSize: '20px', fontWeight: 'bold', margin: '10px 0' }}>{data.title}</p>
-            <p style={{ fontSize: '14px', fontStyle: 'italic', color: '#6b7280', lineHeight: '1.4' }}>"{data.verse}"</p>
-          </div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <section><h3 style={{ color: '#92400e', fontSize: '16px', marginBottom: '5px', fontWeight: 'bold' }}>Lishma: 정결</h3><p style={{ fontSize: '15px', lineHeight: 1.6, color: '#374151', margin: 0 }}>{data.lishma}</p></section>
-            <section><h3 style={{ color: '#92400e', fontSize: '16px', marginBottom: '5px', fontWeight: 'bold' }}>Tota: 체화</h3><p style={{ fontSize: '15px', lineHeight: 1.6, color: '#374151', margin: 0 }}>{data.tota}</p></section>
-            <section><h3 style={{ color: '#92400e', fontSize: '16px', marginBottom: '5px', fontWeight: 'bold' }}>Christo: 파송</h3><p style={{ fontSize: '15px', lineHeight: 1.6, color: '#374151', margin: 0 }}>{data.christo}</p></section>
-          </div>
-
-          <div style={{ marginTop: '30px', borderTop: '1px solid #eee', paddingTop: '20px' }}>
-            <h3 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>📝 나의 실천 메모</h3>
-            <textarea
-              style={{ width: '100%', height: '100px', padding: '12px', backgroundColor: '#fafaf9', border: '1px solid #e7e5e4', borderRadius: '10px', fontSize: '14px', outline: 'none', boxSizing: 'border-box' }}
-              placeholder="오늘 받은 깨달음을 기록하고 완료 버튼을 누르세요..."
-              value={memo}
-              onChange={(e) => setMemo(e.target.value)}
-            />
-          </div>
-
-          <button onClick={handleNextDay} style={{ width: '100%', marginTop: '20px', padding: '15px', backgroundColor: '#78350f', color: 'white', border: 'none', borderRadius: '10px', fontWeight: 'bold', fontSize: '16px', cursor: 'pointer' }}>
-            만찬 완료 및 {currentDay < 31 ? currentDay + 1 : 31}일차 이동
-          </button>
-        </div>
-        
-        <div style={{ backgroundColor: '#f5f5f4', padding: '15px', textAlign: 'center', fontSize: '11px', color: '#78716c' }}>
-          <p style={{ margin: 0 }}>섬김이: 이대희 목사 | ckr9191@hanmail.net</p>
-          <p style={{ margin: '5px 0 0 0' }}>© 2026 THE KING'S BANQUET</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+  { id: 27, title: "겸손의 허리띠", verse: "하나님은 교만한 자를 대적하시되 겸손한 자들에게는 은혜를 주시느니라 (벧전 5:5)", lishma: "인정받으려 했던 사심을 씻어내십시오. 은혜만을 갈망하며 나를 낮추어 비웁니다.", tota: "겸손한 자에게 부어주시는 하늘의 충만함을 창자에 채우십시오. 비울수록 부요해집니다.", christo: "모든 공로를 주님께 돌리십시오. 당신
