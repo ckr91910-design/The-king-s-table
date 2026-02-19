@@ -1,31 +1,83 @@
 import React, { useState, useEffect } from 'react';
 
-// 1월 31일치 전체 데이터
 const meditationData = [
   { id: 1, title: "갈릴리 조반", verse: "와서 조반을 먹으라 (요 21:12)", lishma: "실패한 밤의 그물을 씻으십시오. 결과 중심의 헬라식 사고를 물두멍에 던지고 나를 비웁니다.", tota: "주님이 구워주신 생선의 따뜻함이 창자에 채워집니다. 나는 사랑받는 자입니다.", christo: "사명을 받은 베드로처럼 오늘 나는 주님의 사랑으로 세상을 향해 나갑니다." },
   { id: 2, title: "비둘기 눈", verse: "내 사랑아 너는 어여쁘고 어여쁘다 네 눈이 비둘기 같구나 (아 1:15)", lishma: "복잡한 계산과 염려로 혼탁해진 눈을 씻어내십시오. 오직 주님만 바라보도록 내 욕심을 비웁니다.", tota: "주님이 보시는 나의 아름다움을 창자에 채우십시오. 나는 주님의 보석입니다.", christo: "오늘 만나는 사람들에게 주님의 따뜻한 시선을 전달하는 통로가 되십시오." },
-  { id: 3, title: "사랑의 깃발", verse: "내 사랑하는 자는 내게 속하였고 나는 그에게 속하였도다 (아 2:16)", lishma: "내가 인생의 주인이라는 고집을 번제단에 태우십시오. 소유권 이전을 방해하는 사심을 씻어냅니다.", tota: "나는 주님의 것이라는 정체성을 영혼의 뼈대에 채우십시오. 주님의 평안이 임합니다.", christo: "왕의 소유 된 자로서 당당하게 사십시오. 세상 그 무엇도 당신을 해할 수 없습니다." },
-  { id: 4, title: "포도나무 연합", verse: "나는 포도나무요 너희는 가지라 (요 15:5)", lishma: "내 힘으로 열매 맺으려던 조급함을 씻으십시오. 공급자 주님만을 의지하며 나를 비웁니다.", tota: "주님의 생명력이 나에게 흘러 들어오는 것을 창자로 느끼십시오. 주님 없이는 아무것도 아닙니다.", christo: "오늘 당신은 주님과 연결된 가지입니다. 자연스럽게 사랑의 열매를 맺는 하루가 되십시오." },
-  { id: 5, title: "친구 되신 주님", verse: "이제부터는 너희를 종이라 하지 아니하리니... 너희를 친구라 하였노니 (요 15:15)", lishma: "주님을 무섭게만 여기는 거리감을 씻으십시오. 친밀함을 방해하는 가식을 비웁니다.", tota: "주님과 속마음을 나누는 친구의 기쁨을 창자에 채우십시오. 주님은 나의 가장 가까운 벗입니다.", christo: "오늘 주님과 비밀스러운 대화를 나누며 걷는 친밀한 데이트의 하루를 보내십시오." },
-  { id: 6, title: "숨결의 교제", verse: "내게 입맞추기를 원하니 네 사랑이 포도주보다 나음이로구나 (아 1:2)", lishma: "세상의 자극적인 쾌락에 무뎌진 감각을 씻어내십시오. 주님의 세밀한 숨결을 가로막는 소음을 비웁니다.", tota: "주님의 말씀이 내 영혼의 호흡이 됨을 창자에 새기십시오. 주님의 사랑은 무엇보다 달콤합니다.", christo: "오늘 당신의 언어 속에 주님의 숨결을 담으십시오. 사람을 살리는 생기가 됩니다." },
-  { id: 7, title: "첫 마음의 회복", verse: "어디서 떨어졌는지를 생각하고 회개하여 처음 행위를 가지라 (계 2:5)", lishma: "익숙함 때문에 무뎌진 마음의 때를 씻으십시오. 형식적인 의무감 뒤에 숨은 사랑 없음을 비웁니다.", tota: "주님을 처음 만났던 그 열정을 창자에 다시 채우십시오. 본질은 지식이 아니라 사랑입니다.", christo: "오늘 처음 사랑의 열정으로 모든 일을 대하십시오. 당신의 가슴이 다시 뛰기 시작할 것입니다." },
-  { id: 8, title: "인격적 야다", verse: "영생은... 하나님과 그가 보내신 자 예수 그리스도를 아는 것이니이다 (요 17:3)", lishma: "주님을 분석하려는 헬라식 지식의 욕심을 씻으십시오. 인격을 도구화하려는 교만을 비웁니다.", tota: "주님을 경험하여 아는 '야다'의 은혜를 창자에 채우십시오. 주님은 실제적인 체험입니다.", christo: "오늘 일어나는 사건 속에서 주님의 마음을 직접 경험하십시오. 주님과 함께 호흡하는 하루입니다." },
-  { id: 9, title: "사랑의 향유", verse: "마리아는 지극히 비싼 향유 곧 순전한 나드 한 근을 가져다가 (요 12:3)", lishma: "아까워하는 마음과 계산적인 헌신을 물두멍에 씻으십시오. 나를 증명하려는 사심을 비웁니다.", tota: "가장 귀한 것을 드리는 자의 기쁨을 창자에 채우십시오. 주님은 전부를 받기에 합당하십니다.", christo: "오늘 당신의 삶이 주님께 드려지는 향기로운 제물이 되게 하십시오. 주님의 향기가 흐릅니다." },
-  { id: 10, title: "그늘 아래 안식", verse: "내가 그 그늘에 앉아서 심히 기뻐하였고 그 실과는 내 입에 달았도다 (아 2:3)", lishma: "스스로를 보호하려던 노력을 씻으십시오. 주님의 날개 아래 피하기 위해 내 고집을 비웁니다.", tota: "주님 품 안에서 누리는 절대적인 안식을 창자에 채우십시오. 그곳은 가장 안전한 지성소입니다.", christo: "어떤 환난이 와도 주님의 그늘 아래 머무십시오. 당신은 보호받는 왕의 자녀입니다." },
-  { id: 11, title: "꿀보다 단 말씀", verse: "주의 말씀의 맛이 내게 어찌 그리 단지요 내 입에 꿀보다 더 다니이다 (시 119:103)", lishma: "말씀이 지루하게 느껴지는 영적 마비를 씻으십시오. 세속적인 맛에 길든 입맛을 정결케 비웁니다.", tota: "말씀이 주는 영적 쾌락을 창자에 채우십시오. 이 말씀이 나를 살리는 유일한 보약입니다.", christo: "오늘 당신이 전하는 말이 누군가에게 꿀처럼 달콤한 위로가 되게 하십시오." },
-  { id: 12, title: "동행의 신비", verse: "에녹이 하나님과 동행하더니 (창 5:24)", lishma: "주님보다 앞서 달려가려던 조급함을 씻으십시오. 주님의 속도에 맞추기 위해 내 계획을 비웁니다.", tota: "한 걸음 한 걸음 주님과 발을 맞추는 안식을 창자에 채우십시오. 동행이 곧 목적지입니다.", christo: "오늘 혼자 걷지 마십시오. 곁에 계신 주님께 말을 거는 친밀한 하루가 되십시오." },
-  { id: 13, title: "질투의 고통", verse: "사랑은 죽음 같이 강하고 질투는 스올 같이 잔인하며 (아 8:6)", lishma: "차갑게 식어버린 종교적 심장을 씻어내십시오. 주님의 뜨거운 열망을 가로막는 냉소를 비웁니다.", tota: "나를 향한 주님의 불타는 사랑을 창자에 채우십시오. 그 사랑은 강력한 생명입니다.", christo: "오늘 주님의 뜨거운 심장을 가지고 사람들을 대하십시오. 당신의 온기가 세상을 녹입니다." },
-  { id: 14, title: "영원한 신랑", verse: "내가 네게 장가들어 영원히 살되 (호 2:19)", lishma: "조건에 따라 흔들리는 사랑의 패턴을 씻으십시오. 주님의 신실함을 신뢰하기 위해 내 불안을 비웁니다.", tota: "끊어지지 않는 언약의 끈을 창자에 새기십시오. 주님은 결코 당신을 포기하지 않으십니다.", christo: "오늘 당신은 가장 존귀한 왕의 신부입니다. 그 품격과 당당함으로 하루를 사십시오." },
-  { id: 15, title: "약속의 증표", verse: "내가 내 무지개를 구름 속에 두었나니 (창 9:13)", lishma: "심판에 대한 두려움과 불신을 씻으십시오. 주님의 이름을 높이기 위해 내 의심을 비웁니다.", tota: "변치 않는 주님의 약속을 창자에 채우십시오. 환경은 변해도 말씀은 영원합니다.", christo: "폭풍이 와도 그 너머의 무지개를 바라보십시오. 당신은 약속 안에 있는 안전한 자입니다." },
-  { id: 16, title: "용서의 식탁", verse: "하나님이 그리스도 안에서 너희를 용서하심과 같이 하라 (엡 4:32)", lishma: "상대방을 정죄하여 나를 높이려는 사심을 씻으십시오. 화평을 위해 내 안의 쓴 뿌리를 비웁니다.", tota: "용서가 주는 자유를 창자에 채우십시오. 주님의 용서하시는 인격이 내 안에 이식됩니다.", christo: "오늘은 평화의 사신입니다. 맺힌 관계를 풀고 주님의 화해를 전달하십시오." },
-  { id: 17, title: "화해의 손길", verse: "먼저 가서 형제와 화목하고 그 후에 와서 예물을 드리라 (마 5:24)", lishma: "자존심과 고집을 태우십시오. 화목을 위하여 나의 오기를 비웁니다.", tota: "낮아짐으로 얻는 영적 승리를 창자에 새기십시오. 먼저 손 내미는 자가 진정 강한 자입니다.", christo: "주저했던 그 사람에게 오늘 먼저 따뜻한 말 한마디를 건네십시오. 그곳에 주님이 계십니다." },
-  { id: 18, title: "긍휼의 마음", verse: "예수께서 나오사 큰 무리를 보시고 불쌍히 여기사 (마 14:14)", lishma: "타인의 아픔에 무관심했던 이기적인 마음을 씻어내십시오. 주님의 이름을 위하여 벽을 비웁니다.", tota: "사람을 불쌍히 여기는 주님의 창자를 내 안에 이식하십시오. 긍휼은 기적의 시작입니다.", christo: "주변의 아픈 영혼을 주님의 시선으로 바라보십시오. 당신의 긍휼이 주님의 손길입니다." },
-  { id: 19, title: "상한 갈대", verse: "상한 갈대를 꺾지 아니하며 꺼져가는 심지를 끄지 아니하기를 (마 12:20)", lishma: "부족한 나 자신을 자책하고 포기하려던 마음을 씻으십시오. 내 안의 절망을 비웁니다.", tota: "상처 입은 나를 싸매시는 주님의 부드러운 손길을 창자에 느끼십시오. 다시 일어날 수 있습니다.", christo: "상처 입은 자들에게 주님의 부드러움을 나타내십시오. 당신이 그들의 희망입니다." },
-  { id: 20, title: "눈물의 골짜기", verse: "그들이 눈물 골짜기로 지나갈 때에 그곳에 많은 샘이 있을 것이며 (시 84:6)", lishma: "원망하던 입술을 씻으십시오. 은혜를 주실 주님을 위해 내 원망을 비웁니다.", tota: "눈물이 변하여 기쁨의 샘이 되는 역설을 창자에 채우십시오. 고난 중에 주님은 더 가깝습니다.", christo: "오늘 슬픔 중에 있는 이들에게 위로를 서빙하십시오. 그 골짜기가 샘이 됩니다." },
-  { id: 21, title: "치유의 광선", verse: "치료하는 광선을 비추리니... 외양간에서 나온 송아지 같이 뛰리라 (말 4:2)", lishma: "어둠 속에 숨으려 했던 우울함과 질병의 자아를 씻어냅니다. 빛 되신 주님 앞에 나를 비웁니다.", tota: "치유의 빛이 내 영혼육을 치료함을 창자로 믿으십시오. 나는 주님 안에서 강건해집니다.", christo: "오늘 당신의 밝은 표정이 누군가에게 치료의 광선이 되게 하십시오. 빛을 전하는 자입니다." },
-  { id: 22, title: "사랑의 수고", verse: "너희의 믿음의 역사와 사랑의 수고와... 소망의 인내를 (살전 1:3)", lishma: "보상을 바라고 움직였던 계산적인 동기를 씻으십시오. 사랑하기 때문에 수고하는 마음을 비웁니다.", tota: "사랑하기 때문에 땀 흘리는 기쁨을 창자에 가득 채우십시오. 그 수고가 천국의 상급입니다.", christo: "아무도 알아주지 않는 곳에서 주님의 마음으로 묵묵히 수고하십시오. 왕이 보고 계십니다." },
-  { id: 23, title: "하나 됨의 신비", verse: "우리가 다 한 성령으로 세례를 받아 한 몸이 되었고 (고전 12:13)", lishma: "나 혼자 뛰려 하거나 지체를 시기하던 분열의 마음을 씻으십시오. 연합을 위해 우월감을 비웁니다.", tota: "지체들과 연결되어 있다는 안정감을 창자에 채우십시오. 우리는 함께 갈 때 온전합니다.", christo: "오늘 당신의 팀원이나 가족을 한 몸으로 대하십시오. 연합 속에 하나님의 권능이 임합니다." },
-  { id: 24, title: "서로 사랑하라", verse: "서로 사랑하라 내가 너희를 사랑한 것 같이 너희도 서로 사랑하라 (요 13:34)", lishma: "내 기준에 맞는 사람만 사랑하려던 편견을 씻으십시오. 주님의 사랑을 위해 선입견을 비웁니다.", tota: "주님이 나를 이토록 사랑하셨다는 감격을 창자에 채우십시오. 그것이 이웃 사랑의 힘입니다.", christo: "오늘 당신이 만나는 가장 힘든 사람에게 주님 사랑의 한 조각을 서빙하십시오." },
-  { id: 25, title: "지체 의식", verse: "만일 한 지체가 고통을 받으면 모든 지체가 함께 고통을 받고 (고전 12:26)", lishma: "타인의 고통을 관전하듯 대했던 냉담함을 씻으십시오. 공감을 위해 무관심을 비웁니다.", tota: "이웃의 눈물이 내 눈물처럼 느껴지는 공감을 창자에 채우십시오. 그것이 주님의 마음입니다.", christo: "고통받는 지체에게 주님의 위로를 담은 메시지를 전하십시오. 당신은 주님의 위로자입니다." },
-  { id: 26, title: "섬김의 도", verse: "너희도 서로 발을 씻어 주는 것이 옳으니라 (요 13:14)", lishma: "대접받고 높임받으려 하던 교만의 때를 씻으십시오. 낮은 곳으로 임하기 위해 체면을 비웁니다.", tota: "허리를 숙여 남의 발을 닦아주는 겸손의 평안을 창자에 채우십시오. 주님은 낮은 곳에 계십니다.", christo: "당신이 있는 곳에서 가장 궂은일을 먼저 맡으십시오. 당신이 왕의 식탁을 서빙하는 자입니다." },
-  { id: 27, title: "겸손의 허리띠", verse: "하나님은 교만한 자를 대적하시되 겸손한 자들에게는 은혜를 주시느니라 (벧전 5:5)", lishma: "인정받으려 했던 사심을 씻어내십시오. 은혜만을 갈망하며 나를 낮추어 비웁니다.", tota: "겸손한 자에게 부어주시는 하늘의 충만함을 창자에 채우십시오. 비울수록 부요해집니다.", christo: "모든 공로를 주님께 돌리십시오. 당신
+  { id: 3, title: "사랑의 깃발", verse: "내 사랑하는 자는 내게 속하였고 나는 그에게 속하였도다 (아 2:16)", lishma: "내가 인생의 주인이라는 고집을 번제단에 태우십시오. 소유권 이전을 방해하는 사심을 씻어냅니다.", tota: "나는 주님의 것이라는 정체성을 영혼의 뼈대에 채우십시오. 주님의 평안이 임합니다.", christo: "왕의 소유 된 자로서 당당하게 사십시오. 세상 그 무엇도 당신을 해할 수 없습니다." }
+];
+
+for (let i = 4; i <= 31; i++) {
+  meditationData.push({
+    id: i, title: `${i}일차 성막 만찬`, verse: "왕의 식탁으로의 초대",
+    lishma: "내 안의 사심과 고집을 물두멍에서 깨끗이 씻어내고 나를 비웁니다.",
+    tota: "주님의 인격과 성품을 내 영혼의 창자에 가득 채웁니다.",
+    christo: "오늘도 예수로 사는 삶을 위해 세상으로 나갑니다."
+  });
+}
+
+export default function App() {
+  const [currentDay, setCurrentDay] = useState(1);
+  const [memo, setMemo] = useState("");
+
+  useEffect(() => {
+    const savedMemo = localStorage.getItem(`memo-${currentDay}`);
+    setMemo(savedMemo || "");
+  }, [currentDay]);
+
+  const data = meditationData.find(d => d.id === currentDay) || meditationData[0];
+
+  const handleNextDay = () => {
+    localStorage.setItem(`memo-${currentDay}`, memo);
+    if (currentDay < 31) {
+      setCurrentDay(prev => prev + 1);
+      setMemo("");
+      window.scrollTo(0, 0);
+    } else {
+      alert("1월의 모든 만찬을 마쳤습니다!");
+    }
+  };
+
+  return (
+    <div style={{ minHeight: '100vh', backgroundColor: '#f5f5f4', padding: '15px', fontFamily: 'serif', boxSizing: 'border-box' }}>
+      <div style={{ maxWidth: '450px', margin: '0 auto', backgroundColor: 'white', borderRadius: '15px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)', overflow: 'hidden' }}>
+        <div style={{ backgroundColor: '#78350f', color: 'white', padding: '20px', textAlign: 'center' }}>
+          <h1 style={{ fontSize: '24px', margin: 0 }}>King's Table</h1>
+          <p style={{ fontSize: '12px', opacity: 0.8, margin: '5px 0 0 0' }}>휘장을 지나 왕의 식탁으로</p>
+        </div>
+        <div style={{ padding: '25px' }}>
+          <div style={{ textAlign: 'center', borderBottom: '2px solid #f5f5f4', marginBottom: '20px', paddingBottom: '15px' }}>
+            <h2 style={{ fontSize: '18px', color: '#78350f', margin: 0 }}>1월 {currentDay}일 거룩한 만찬</h2>
+            <p style={{ fontSize: '20px', fontWeight: 'bold', margin: '10px 0' }}>{data.title}</p>
+            <p style={{ fontSize: '14px', fontStyle: 'italic', color: '#6b7280' }}>"{data.verse}"</p>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <div style={{ padding: '10px', backgroundColor: '#fffbeb', borderRadius: '8px' }}>
+              <h3 style={{ color: '#92400e', fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>Lishma: 정결</h3>
+              <p style={{ fontSize: '15px', color: '#374151', lineHeight: 1.5, margin: 0 }}>{data.lishma}</p>
+            </div>
+            <div style={{ padding: '10px', backgroundColor: '#fffbeb', borderRadius: '8px' }}>
+              <h3 style={{ color: '#92400e', fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>Tota: 체화</h3>
+              <p style={{ fontSize: '15px', color: '#374151', lineHeight: 1.5, margin: 0 }}>{data.tota}</p>
+            </div>
+            <div style={{ padding: '10px', backgroundColor: '#fffbeb', borderRadius: '8px' }}>
+              <h3 style={{ color: '#92400e', fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>Christo: 파송</h3>
+              <p style={{ fontSize: '15px', color: '#374151', lineHeight: 1.5, margin: 0 }}>{data.christo}</p>
+            </div>
+          </div>
+          <div style={{ marginTop: '30px' }}>
+            <h3 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>📝 나의 실천 메모</h3>
+            <textarea
+              style={{ width: '100%', height: '100px', padding: '12px', border: '1px solid #d1d5db', borderRadius: '10px', fontSize: '14px', outline: 'none', boxSizing: 'border-box' }}
+              placeholder="오늘의 다짐을 기록하세요..."
+              value={memo}
+              onChange={(e) => setMemo(e.target.value)}
+            />
+          </div>
+          <button onClick={handleNextDay} style={{ width: '100%', marginTop: '20px', padding: '15px', backgroundColor: '#78350f', color: 'white', border: 'none', borderRadius: '10px', fontWeight: 'bold', fontSize: '16px', cursor: 'pointer' }}>
+            만찬 완료 및 {currentDay < 31 ? currentDay + 1 : 31}일차 이동
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
